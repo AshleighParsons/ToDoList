@@ -1,0 +1,43 @@
+.lists {
+  margin: 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #7ebdb4;
+  border-color: #7ebdb4;
+  padding: 0.7em 1.5em;
+  margin: 2em auto;
+}
+
+input {
+  margin-right: 0.2em;
+}
+
+input[type=search] {
+  margin: 2em auto;
+  height: 3em;
+  width: 100%;
+  padding: 0 1em;
+  border-radius: 10px;
+}
+
+.todo {
+  margin: 0 0 2em;
+}
+
+.card-header {
+  font-size: large;
+}
+
+.delete {
+  color: red !important;
+}
+
+.edit {
+  color: #f4a548;
+}

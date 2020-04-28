@@ -1,0 +1,33 @@
+<div class="lists">
+  <h1 class="pull-xs-left">
+    Your Todos
+  </h1>
+  <div class="pull-xs-right col-sm-6">
+    <a class="btn btn-primary" [routerLink]="['/add-todo']" role="button">
+      New Todo +
+    </a>
+  </div>
+
+<div class="pull-xs-right col-md-6">
+  <div class="md-form">
+    <input type="search" [(ngModel)]="searchText" placeholder="Search todos">
+  </div>
+</div>
+
+  <div class="clearfix">
+  </div>
+  <br>
+  <div class="row">
+    <div *ngFor="let todo of todos | filter: searchText" class="col-sm-4 todo">
+      <div class="card text-center">
+        <div class="card-header">
+          <input type="checkbox" />
+          {{ todo?.name}}
+        </div>
+          <button (click)="deleteTodo(todo?.id)" class="btn delete">Delete</button>
+          <button (click)="editTodo(todo?.id)" class="btn edit">Edit</button>
+
+      </div>
+    </div>
+  </div>
+</div>
